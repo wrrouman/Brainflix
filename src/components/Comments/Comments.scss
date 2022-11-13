@@ -1,0 +1,31 @@
+
+
+.comments__container{
+    display: flex;
+    gap: 1rem;
+    border-bottom: 1px solid ;
+    align-items: top;
+    
+   
+}
+
+.name__date--container{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.name__date--comments{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.avatar__container{
+    background-color: blue;
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+    
+    
+}

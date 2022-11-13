@@ -10,3 +10,25 @@
 <comments>
 <NextVideo>
 
+
+    To-do list
+
+    1. Typography 
+    2. Components
+        <button></button>
+        search
+        break line
+
+    3. Next video must not include the current
+     one playing 
+
+    4. Side videos should be  
+    clickable and should update main video
+
+    5. React breakpoints 
+
+    6. comments timestamp (same page?)
+
+
+
+        

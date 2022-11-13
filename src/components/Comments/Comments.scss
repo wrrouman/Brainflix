@@ -1,31 +1,36 @@
-
-
-.comments__container{
-    display: flex;
-    gap: 1rem;
-    border-bottom: 1px solid ;
-    align-items: top;
-    
-   
-}
-
-.name__date--container{
-    display: flex;
-    justify-content: space-between;
-
-}
-
-.name__date--comments{
-    display: flex;
-    flex-direction: column;
+@use '../../styles/partials/mixins';
+*{
+    font-family: sans-serif;
+    font-weight: 400;
 }
 
 
-.avatar__container{
-    background-color: blue;
-    height: 36px;
-    width: 36px;
-    border-radius: 50%;
-    
-    
-}
+    .comments{
+
+    &__container{
+        display: flex;
+        gap: 1rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    &__avatar{
+    background-color:  #afafaf;;
+        max-height: 36px;
+        min-width: 36px;
+        border-radius: 50%;
+    } 
+    &__nameDate{
+        display: flex;
+        justify-content: space-between;
+    } 
+    &__name{
+        font-weight: 700;
+    }
+    &__time{
+        color: #afafaf;
+    }
+
+}  
+
+
+

@@ -1,0 +1,63 @@
+.video__content__container {
+  @media (min-width: 1279px) {
+    max-width: 1080px;
+    margin: auto;
+    display: flex;
+    .video__details__and__comments {
+      flex-grow: 3;
+    }
+  }
+}
+
+    
+.video__current--playing {
+  font-size: 33px;
+line-height: 44px;
+font-weight: 700;
+
+}
+
+.video__details{
+  display: flex;
+  gap: 5rem;
+  @media (min-width: 767px){
+    justify-content: space-between;
+  }
+ 
+}
+
+.video__views{
+  display: flex;
+}
+
+.video__likes{
+  display: flex;
+}
+
+.video__channel--timestamp{
+  display: flex;
+  flex-direction: column;
+  @media (min-width: 767px){
+    flex-direction: row;
+    gap: 2rem;
+    align-items: center;
+  }
+}
+
+
+.video__views--likes{
+  display: flex;
+  flex-direction: column;
+  @media (min-width: 767px){
+    flex-direction: row;
+    gap: 2rem;
+    align-items: center;
+  }
+
+}
+
+
+  
+
+
+

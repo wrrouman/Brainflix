@@ -1,33 +1,86 @@
 .video__content__container {
+  padding-top: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin: auto;
+  @media (min-width: 767px){
+    padding-left: 36px;
+    padding-right: 36px;
+  }
   @media (min-width: 1279px) {
     max-width: 1080px;
     margin: auto;
     display: flex;
+    gap: 1.5rem;
+    
     .video__details__and__comments {
       flex-grow: 3;
+      border-right: 2px solid  #afafaf;
+     margin-right: 1rem;
+     
     }
   }
 }
+
+.video__channel-name{
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 700;
+}
+
 
     
 .video__current--playing {
   font-size: 33px;
 line-height: 44px;
 font-weight: 700;
+padding-bottom: 1rem;
+border-bottom: 2px solid  #afafaf;
+@media (min-width: 767px){
+  border-bottom: none;
+  padding-bottom: 0px;
+}
 
 }
 
 .video__details{
   display: flex;
   gap: 5rem;
+  border-bottom: 2px solid  #afafaf;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
   @media (min-width: 767px){
     justify-content: space-between;
+   
   }
- 
+ @media (min-width: 1279px){
+  padding-right: 2rem;
+ }
+}
+
+video{
+  background-color: black;
+  
 }
 
 .video__views{
   display: flex;
+  
+}
+
+.video__likes-count, .video__views-count, .video__timestamp{
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #AFAFAF;
+
+}
+
+.video__description{
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+  padding-top: 1.5rem;
 }
 
 .video__likes{

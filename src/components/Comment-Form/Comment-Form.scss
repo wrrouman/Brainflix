@@ -1,0 +1,87 @@
+
+
+.new__comment-container{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1rem;
+    border-bottom: 2px solid  #afafaf;
+    padding-bottom: 2rem;
+    @media (min-width: 767px){
+        
+
+    }
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    @media (min-width: 767px){
+        flex-direction: row;
+    }
+}
+
+#avatar_comment{
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+}
+
+.comment__button-contsiner{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    @media (min-width: 767px){
+        flex-direction: row;
+       justify-content: flex-end;
+       gap: 2rem;
+    }
+    @media (min-width:1279px) {
+        padding-right: 2rem;
+        
+    }
+}
+
+.comment__button{
+    background-image: url(../../assets/Icons/add_comment.svg);
+    background-repeat: no-repeat;
+    background-size: 1.5rem;
+    background-position-x:0.5rem ;
+    background-position-y: center;
+    padding-left: 1.5rem;
+    background-color: #0095FF;
+    border-color:  #0095FF;
+    color: #FFFFFF;
+    border-radius: 4px;
+    border-color: none;
+    width: 100%;
+    height: 36px;
+    @media (min-width: 767px) {
+        min-width: 200px;
+        height: 3rem;
+       
+    }
+    
+
+
+}
+
+.textbox{
+    height: 100px;
+    padding: 1rem;
+    border-radius: 4px;
+    margin-bottom: .5rem;
+    @media(min-width: 767px){
+        max-height: 1rem;
+         min-width: 60%;
+         margin: 0px
+    }
+}
+
+.conversation{
+    font-weight: 400;
+    color: #afafaf;
+    margin-left: 3.5rem;
+    
+}

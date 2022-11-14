@@ -42,21 +42,21 @@ function VideoPage() {
           <h2 className="video__current--playing">{videoData.title}</h2>
           <div className="video__details">
             <div className="video__channel--timestamp">
-            <h3>By {videoData.channel}</h3>
-            <p>{formatTimestamp(videoData.timestamp)}</p>
+            <h3 className="video__channel-name">By {videoData.channel}</h3>
+            <p className="video__timestamp">{formatTimestamp(videoData.timestamp)}</p>
             </div>
             <div className="video__views--likes">
             <div className="video__views">
               <img src={ViewsIcon} />
-              <p>{videoData.views}</p>
+              <p className="video__views-count">{videoData.views}</p>
             </div>
             <div className="video__likes">
-              <img src={likesIcon} />
-              <p>{videoData.likes}</p>
+              <img  src={likesIcon} />
+              <p className="video__likes-count">{videoData.likes}</p>
             </div>
             </div>
           </div>
-          <p>{videoData.description}</p>
+          <p className="video__description">{videoData.description}</p>
           <Comments names={videoData.comments} />
         </div>
         <Videolist

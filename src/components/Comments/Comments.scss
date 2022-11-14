@@ -9,14 +9,19 @@
 
     &__container{
         display: flex;
-        gap: 1rem;
+        gap: 2rem;
         margin-top: 1rem;
         margin-bottom: 1rem;
+        border-bottom: 0.125rem solid  #afafaf;
+        padding-bottom: 1rem;
+        @media(min-width: 1279px){
+            padding-right: 2rem;
+        }
     }
     &__avatar{
     background-color:  #afafaf;;
-        max-height: 36px;
-        min-width: 36px;
+        max-height: 2.25rem;
+        min-width: 2.25rem;
         border-radius: 50%;
     } 
     &__nameDate{
@@ -28,6 +33,15 @@
     }
     &__time{
         color: #afafaf;
+    }&__description{
+        font-size: 0.875rem;
+        line-height: 1.375rem;
+        font-weight: 400;
+       
+    }&__counter{
+        font-weight: 700;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
     }
 
 }  

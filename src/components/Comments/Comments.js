@@ -8,7 +8,7 @@ const Comments = (props) => {
   return (
     <>
       <div className="comments">
-        <p>{props.names.length} Comments</p>
+        <p className="comments__counter">{props.names.length} Comments</p>
         <CommentForm />
         <ul>
           {/* each li would be mapped */}
@@ -23,7 +23,7 @@ const Comments = (props) => {
                       {formatTimestamp(comment.timestamp)}
                     </p>
                   </div>
-                  <p>{comment.comment}</p>
+                  <p className="comments__description">{comment.comment}</p>
                 </div>
               </li>
             );

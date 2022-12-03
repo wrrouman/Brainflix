@@ -1,21 +1,30 @@
 import "./App.css";
-
-import Data from '../src/data/video-details.json';
-import Header from "./components/Header/Header.js";
-import VideoPage from "./components/VideoPage/VideoPage";
-// import NextVideos from "./components/NextVideos/NextVideos";
-import Comment from "./components/Comments/Comments"
-import Videolist from "./components/Videolist/Videolist";
-import { MapHTMLAttributes } from "react";
-
-
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home/Home";
+import Upload from "./pages/Upload/Upload";
+import { getVideos } from "./components/api/api";
+import { useState, useEffect } from "react";
 
 function App() {
-  const details = Data [0]
-  return (
+  useEffect(() => {
+    // the code I want to run during the update
+
+    getVideos().then((res) => {
+      console.log(res.data);
+      setVideosData(res.data);
+    });
+  }, []); // empty dependency will ony run after the inital mount of the component 
+
+  const [videosData, setVideosData] = useState();
+     return (
     <>
-      <Header />
-      <VideoPage />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home videosData={videosData} />} />
+          <Route path="/upload" element={<Upload />} />
+          <Route path="/:id" element={<Home videosData={videosData} />} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }

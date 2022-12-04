@@ -1,26 +1,5 @@
 
-.test{
-    @media (min-width: 1279px) {
-       display: flex;
-       align-items: baseline;
-       gap: 2rem;
-       border-bottom: 2px solid #AFAFAF;
-            padding-bottom: 1.5rem;
-            max-width: 100%;
-        
-      
 
-
-        
-    }
-}
-.test2{
-   width: 100%;
-   display: flex;
-   gap: 6rem;
-    
-
-}
 
 .upload{
     border-top: 2px solid #AFAFAF;;
@@ -31,6 +10,24 @@
         padding-right: 36px;
 
     }
+    &__test-container{
+        @media (min-width: 1279px) {
+           display: flex;
+           align-items: baseline;
+           gap: 2rem;
+           border-bottom: 2px solid #AFAFAF;
+                padding-bottom: 1.5rem;
+                max-width: 100%
+            
+        }
+    }
+    &__test2{
+        width: 100%;
+        display: flex;
+        gap: 6rem;
+     
+     }
+
     &__container1{
         padding-top: 1.5rem;
         display: flex;

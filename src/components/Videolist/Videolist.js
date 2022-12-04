@@ -1,11 +1,12 @@
 import "./Videolist.scss";
 import videos from "../../data/videos.json";
 import videosdetails from "../../data/video-details.json";
+import { Link } from "react-router-dom";
 
 function Videolist(props) {
   // everything before the return statement, is the "brain" of the component
 
-  const filterVideoDetails = videosdetails.filter((video) => {
+  const filterVideoDetails = props.videosData.filter((video) => {
     return video.id !== props.currentVideoId;
   });
 
@@ -16,10 +17,11 @@ function Videolist(props) {
         //use props.videos and remove import videos
         filterVideoDetails.map((video) => {
           return (
-            <div
+          <Link to={`/${video.id}`}>
+          <div
               className="videos__container"
               onClick={() => props.handleClickVideo(video.id)}
-            >
+            >  
               <div className="videos__image-container">
                 <img className="videos__image" src={video.image}></img>
               </div>
@@ -28,6 +30,9 @@ function Videolist(props) {
                 <p className="videos__channel">{video.channel}</p>
               </div>
             </div>
+          </Link>
+
+            
           );
         })
       }

@@ -1,7 +1,29 @@
 
+.test{
+    @media (min-width: 1279px) {
+       display: flex;
+       align-items: baseline;
+       gap: 2rem;
+       border-bottom: 2px solid #AFAFAF;
+            padding-bottom: 1.5rem;
+            max-width: 100%;
+        
+      
 
+
+        
+    }
+}
+.test2{
+   width: 100%;
+   display: flex;
+   gap: 6rem;
+    
+
+}
 
 .upload{
+    border-top: 2px solid #AFAFAF;;
     padding-left: 16px;
     padding-right: 16px;
     @media (min-width: 768px) {
@@ -9,43 +31,76 @@
         padding-right: 36px;
 
     }
-    &__title{
-        border-top: 2px solid;
-        width: 100vw;
+    &__container1{
         padding-top: 1.5rem;
-        padding-bottom: 1.5rem;
+        display: flex;
+        flex-direction: column;
+   
+    }
+    &__title{
+        padding-top: 1.5rem;
         font-size: 24px;
         line-height: 32px;
         font-weight: 700;
+        @media (min-width: 767px){
+            border-bottom: 2px solid #AFAFAF;
+            padding-bottom: 1.5rem;
+            max-width: 100%;
+          }
     }
     &__section--thumbnail{
        color: #E1E1E1;
        padding-bottom: .5rem;
        font-weight: 400;
+      
     }
     &__label--title{
         color: #E1E1E1;
         font-weight: 400;
         padding-bottom: .2rem;
+      
         
     }
     &__thumbnail--image{
         width: 100%;
         border-radius: 4px;
+        @media (min-width: 767px){
+            width: 50%
+          }
+          @media (min-width: 1279px){
+            width: 100%
+          }
     }
+    &__section--comments{
+        display: flex;
+        flex-direction: column;
+       
+    }
+  
     &__section--containerA{
         display:flex;
         flex-direction: column;
         padding-top: 1rem;
-    
+        @media (min-width: 767px){
+            width: 100%
+          }
     }
     &__section--containerB{
         display:flex;
         flex-direction: column;
         padding-top: 2rem;
     }
+    &__section--containerC{
+        @media (min-width: 767px){
+            display: flex;
+            flex-direction: row-reverse;
+            gap: 5rem;
+            align-items: center;
+          }
+    }
     &__publish--button{
-        padding-top: 2rem
+        padding-top: 2rem;
+        min-width: 200px;
     }
     &__cancel--container{
         padding-top: 2rem;

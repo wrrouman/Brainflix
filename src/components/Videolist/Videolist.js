@@ -2,6 +2,7 @@ import "./Videolist.scss";
 import videos from "../../data/videos.json";
 import videosdetails from "../../data/video-details.json";
 import { Link } from "react-router-dom";
+import { staticImages } from "../api/api";
 
 function Videolist(props) {
   // everything before the return statement, is the "brain" of the component
@@ -23,7 +24,7 @@ function Videolist(props) {
                 onClick={() => props.handleClickVideo(video.id)}
               >
                 <div className="videos__image-container">
-                  <img className="videos__image" src={video.image}></img>
+                  <img className="videos__image" src={staticImages + video.image}></img>
                 </div>
                 <div className="videos__subcontainer1">
                   <p className="videos__subtitle">{video.title}</p>

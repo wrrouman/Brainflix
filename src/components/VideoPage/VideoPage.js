@@ -6,7 +6,7 @@ import Comments from "../Comments/Comments";
 import { formatTimestamp } from "../../Toolbelt/utilities";
 import likesIcon from "../../assets/Icons/likes.svg";
 import ViewsIcon from "../../assets/Icons/views.svg";
-import { getVideos, getVideoById } from "../api/api";
+import { getVideos, getVideoById, staticImages } from "../api/api";
 import { useParams } from "react-router-dom";
 
 // VideoPage is going to keep track of "state" of itself, and the data for its child components
@@ -51,7 +51,7 @@ function VideoPage({videosData}) {
     {/* // if video data is truthy, the data will render */}
       {videoData &&  (
         <>
-          <video style={{ width: "100%" }} poster={videoData.image} controls />
+          <video style={{ width: "100%" }} poster={staticImages + videoData.image} controls />
           <div className="video__content__container">
             <div className="video__details__and__comments">
               <h2 className="video__current--playing">{videoData.title}</h2>

@@ -12,7 +12,7 @@ import { MapHTMLAttributes } from "react";
 
 
 function Home({videosData}) {
-  const details = Data [0]
+  // const details = Data [0]
   return (
     <>
       <Header />

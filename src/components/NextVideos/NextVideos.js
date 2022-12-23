@@ -1,5 +1,6 @@
 import "./NextVideos.scss";
 import videosData from "../../data/videos.json";
+import { staticImages } from "../api/api";
 
 // props.updateVideoId
 
@@ -15,7 +16,10 @@ function NextVideos(props) {
         }}
       >
         <div className="nextVideo-container">
-          <img className="nextVideo-image" src={videoData.image} />
+          <img
+            className="nextVideo-image"
+            src={staticImages + videoData.image}
+          />
 
           <div className="videoDetails-container">
             <h4>{videoData.title}</h4>
